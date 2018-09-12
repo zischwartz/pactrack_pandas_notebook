@@ -1,0 +1,13 @@
+.cache
+dist
+.DS_Store
+*.zip
+*.ipython
+*.ipynb_checkpoints
+*.local
+*.txt
+*.csv
+*/*.csv
+cdn
+__pycache__
+.config
