@@ -10,6 +10,8 @@
     "nbconvert":
       "docker run -it --rm -v $PWD:/home/jovyan/work --rm jupyter/datascience-notebook jupyter nbconvert --to python work/download_data.ipynb",
     "jupyter-debug":
-      "docker run -it --rm -v $PWD:/home/jovyan/work --rm -p 8888:8888 jupyter/datascience-notebook bash"
+      "docker run -it --rm -v $PWD:/home/jovyan/work --rm -p 8888:8888 jupyter/datascience-notebook bash",
+    "nb-run":
+      "docker run  --rm -v $PWD:/home/jovyan/work --rm jupyter/datascience-notebook jupyter nbconvert --ExecutePreprocessor.timeout=3600  --to notebook --execute ./work/process.ipynb"
   }
 }
