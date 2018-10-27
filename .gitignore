@@ -11,3 +11,4 @@ dist
 cdn
 __pycache__
 .config
+out_before_tp_drop
